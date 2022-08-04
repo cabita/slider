@@ -32,7 +32,7 @@ export class SliderComponent implements OnInit {
 
   changeValue() {
 
-    let thumbWidth = 48;
+    let thumbWidth = this.test.nativeElement.offsetWidth;
     this.inputValue = this.sliderForm.get('slider')?.value;
     this.long = (this.inputWidth.nativeElement).offsetWidth;
 
