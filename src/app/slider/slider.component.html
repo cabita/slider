@@ -1,0 +1,7 @@
+<div  class="container">
+    <form [formGroup]="sliderForm">
+        <input  #inputWidth type="range" id="vol" name="vol" [min]="min" [max]="max" class="slider" formControlName="slider" (change)="changeValue()">
+        <div #test class="bubble" [style.margin-left.px]="left">{{inputValue}}</div>
+    </form>
+</div>
+
